@@ -1,0 +1,18 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/usr/share/java/mysql-connector-java-8.0.28.jar",
+        "/usr/share/openjfx/lib/javafx",
+        "/usr/share/openjfx/lib/javafx.base.jar",
+        "/usr/share/openjfx/lib/javafx.controls.jar",
+        "/usr/share/openjfx/lib/javafx.fxml.jar",
+        "/usr/share/openjfx/lib/javafx.graphics.jar",
+        "/usr/share/openjfx/lib/javafx.media.jar",
+        "/usr/share/openjfx/lib/javafx.swing.jar",
+        "/usr/share/openjfx/lib/javafx.web.jar",
+        "/opt/scenebuilder/lib/app/scenebuilder-17.0.0-all.jar"
+    ],
+    "java.debug.settings.vmArgs": "--module-path /usr/share/openjfx/lib --add-modules=javafx.controls,javafx.fxml,javafx.base,javafx.media,javafx.web,javafx.swing"
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="455.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ReportController">
+   <children>
+      <Label text="Student Report">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" top="10.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" />
+         </padding>
+      </Label>
+      <BarChart fx:id="studentReportChart" title="Margin of approvals, disapprovals and recoveries">
+        <xAxis>
+          <CategoryAxis label="Margin" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Number of Students" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="645.0" style="-fx-background-color: #DCDCDC;">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+         <children>
+            <Label fx:id="averageLabel" text="Average: ">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>
